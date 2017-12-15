@@ -1,0 +1,123 @@
+/*
+teal - #00b3be
+green - #00bc00 
+orange - #ff7b4a 
+*/
+
+body {
+  font-size: 2em;	
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  color: #000;
+  background-image: url('http://192.168.33.10/socy-home/images/geo_librarian.jpg')
+}
+
+.hero h1 {
+	font-size: 5em;
+    margin-top: 0;
+    display: block;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 25vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ff7b4a;
+}
+
+.hero i {
+	font-size: 6em;
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 400px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000;
+}
+
+.hero .four {
+	padding: 5px;
+	border:2px solid #fff;
+	-webkit-transition: border 2s; /* Safari */
+    transition: border 2s;
+}
+
+.hero .four:hover {
+	border:2px solid #00b3be;
+}
+
+.hero p {
+	height: 170px;
+}
+
+.top-icon {
+	width:40%;
+	margin: 0 auto;
+	display: block;
+}
+
+canvas {
+	display: block;
+	z-index: -3000;
+	position: absolute;
+	top:0;
+}
+
+.floater {
+	position: absolute;
+	top:0;
+	right:0;
+	height: 100vh;
+	width: auto;
+}
+
+.soc-semester{
+	background-color: #00b3be;
+	padding: 20px 0;	
+}
+
+.semester-box{
+	display: flex;
+}
+
+.semester {
+	flex: 1;
+	background-color: #fff;
+	padding: 5px;
+}
+
+
+.semester ul {
+	list-style: none;
+}
+
+.soc-what {
+	padding-top: 50px;
+}
+
+.soc-who {
+	background-color: #ff7b4a;
+	padding-top: 30px;
+}
+
+/* Larger than mobile */
+@media (max-width: 400px) {
+
+}
+
+/* Larger than phablet */
+@media (max-width: 550px) {
+	.floater {
+	display: none;
+}
+}
