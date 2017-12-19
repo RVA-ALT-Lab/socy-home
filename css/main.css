@@ -14,6 +14,15 @@ body {
   background-image: url('http://192.168.33.10/socy-home/images/geo_librarian.jpg')
 }
 
+a {
+	color: #ff7b4a;
+	text-decoration: underline;
+}
+
+#header {
+	background-color: transparent; 
+}
+
 .hero h1 {
 	font-size: 5em;
     margin-top: 0;
@@ -22,7 +31,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    padding-top: 25vh;
     font-weight: 600;
     text-transform: uppercase;
     color: #ff7b4a;
@@ -37,40 +45,27 @@ body {
 }
 
 .hero {
-  height: 100vh;
   min-height: 400px;
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: #000;
 }
 
-.hero .four {
+.hero .col-md-4 {
 	padding: 5px;
 	border:2px solid #fff;
 	-webkit-transition: border 2s; /* Safari */
     transition: border 2s;
 }
 
-.hero .four:hover {
-	border:2px solid #00b3be;
-}
 
 .hero p {
 	height: 170px;
 }
 
+
 .top-icon {
 	width:40%;
 	margin: 0 auto;
 	display: block;
-}
-
-canvas {
-	display: block;
-	z-index: -3000;
-	position: absolute;
-	top:0;
 }
 
 .floater {
@@ -86,16 +81,11 @@ canvas {
 	padding: 20px 0;	
 }
 
-.semester-box{
-	display: flex;
-}
 
 .semester {
-	flex: 1;
 	background-color: #fff;
 	padding: 5px;
 }
-
 
 .semester ul {
 	list-style: none;
@@ -107,8 +97,147 @@ canvas {
 
 .soc-who {
 	background-color: #ff7b4a;
-	padding-top: 30px;
+	padding: 30px 0 30px 0;
 }
+
+.faculty-container {			  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+}
+.faculty-box{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	margin: 5px;
+	display: inline-block;
+}
+
+.faculty {
+	object-fit: cover;
+	overflow: hidden;
+}
+
+
+/*BUTTONS FROM https://codepen.io/sazzad/pen/yNNNJG */
+/* Global Button Styles */
+.hero a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.hero a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+.hero a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+.hero a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+.hero a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #ff7b4a;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+/* Victoria Buttons */
+
+.hero a.animated-button.victoria-one {
+	border: 2px solid #00b3be;
+}
+.hero a.animated-button.victoria-one:after {
+	background: #00b3be;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+.hero a.animated-button.victoria-two {
+	border: 2px solid #00b3be;
+}
+.hero a.animated-button.victoria-two:after {
+	background: #00b3be;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+.hero a.animated-button.victoria-three {
+	border: 2px solid #00b3be;
+}
+.hero a.animated-button.victoria-three:after {
+	background: #00b3be;
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+.hero a.animated-button.victoria-three:hover:after {
+	height: 140%;
+	opacity: 1;
+}
+.hero a.animated-button.victoria-four {
+	border: 2px solid #00b3be;
+}
+.hero a.animated-button.victoria-four:after {
+	background: #00b3be;
+	opacity: .5;
+	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+.hero a.animated-button.victoria-four:hover:after {
+	opacity: 1;
+	height: 600% !important;
+}
+
 
 /* Larger than mobile */
 @media (max-width: 400px) {
@@ -117,7 +246,30 @@ canvas {
 
 /* Larger than phablet */
 @media (max-width: 550px) {
+	body {
+	  font-size: 2em;	
+	  background-position: top left;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: contain;
+	  color: #000;
+	  background-image: url('http://192.168.33.10/socy-home/images/geo_librarian.jpg')
+	}
+
 	.floater {
-	display: none;
-}
+		display: none;
+	}
+
+	.hero h1 {
+		font-size: 1.8em;
+    	text-align: center;
+    	padding-top: 15vh;
+	}
+
+	.faculty-box{
+		width: 400px;
+		height: 400px;
+		overflow: hidden;
+		margin: 5px;
+	}
 }

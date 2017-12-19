@@ -10,48 +10,53 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/skeleton.css">
+    <!--<link rel="stylesheet" href="css/skeleton.css">-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-    <div id="header" class="u-full-width hero">
-        <h1>Digital Sociology</h1>
-       <!-- <img class="floater" src="images/linkedin.png">-->
+    <div id="header" class="jumbotron jumbotron-fluid hero">
         <div class="container">
+            <h1>Digital Sociology</h1>
+            <!-- <img class="floater" src="images/linkedin.png">-->
             <div class="row">
-                <div class="four columns">
+                <div class="col-md-4">
                     <i class="fa fa-cogs" aria-hidden="true"></i>
                     <h2>Our Program</h2>
                     <p>The U.S.'s first Master of Science degree in Sociology with a focus on Digital Sociology </p>
-                    <a href="#program-details"><button type="">Program Details</button></a>
+                    <a class="btn-sm animated-button victoria-two" href="#program-details">Program Details</a>
                 </div>
-                <div class="four columns">
+                <div class="col-md-4">
                     <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                     <h2>Header Uno</h2>
                     <p>Similar statements fish you magnificent to learn do the other. </p>
-                    <a href="#semester-details"><button type="">Pathway Details</button></a>
+                    <a href="#semester-details">
+                        <button type="">Pathway Details</button>
+                    </a>
                 </div>
-                <div class="four columns">
+                <div class="col-md-4">
                     <img class="top-icon" src="images/faculty.png">
                     <!--<i class="fa fa-lightbulb-o" aria-hidden="true"></i>-->
                     <h2>Who We Are</h2>
                     <p>Succinct statements that compel you to learn more about this thing. </p>
-                    <a href="#human-details"><button type="">More About Us</button></a>                    
+                    <a href="#human-details">
+                        <button type="">More About Us</button>
+                    </a>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
     <div class="container">
-        <!-- just use a number and class 'column' or 'columns' -->
         <div class="row">
-            <div id="program-details" class="twelve columns">
+            <div id="program-details" class="col-md-12">
                 <h2>Learn Together. Grow Together.</h2>
                 <p>
                     In fall 2016, we will offer the U.S.'s first Master of Science degree in Sociology with a focus on Digital Sociology. In addition to taking traditional M.S. sociology courses in theory and methods, students will also be able to elect to study the digital world. We study what all this change means for how we work, go to school, form families, understand ourselves, and enact social change. This rigorous degree program will prepare graduates to shape emerging local, national and global conversations about big data, privacy, algorithms, inequality and social movements. Students will create meaningful projects from the start, building a digital portfolio of analytical skills, theoretical chops, and critical analysis. The course sequence brings together a cohort from day one that moves through an eight course sequence in methods, theory, substantive courses and internship/practicum. Join us as sociologists shape the digital future at VCU SOCY.
@@ -59,97 +64,112 @@
             </div>
         </div>
     </div>
-<div class="u-full-width soc-semester">    
-    <div id="semester-details" class="container">
-        <h2>The Path</h2>
-        <div class="row semester-box">
-            <div class="semester three columns">
-                <h3>Semester 1</h3>
-                <ul>
-                    <li>Statistics</li>
-                    <li>Theory</li>
-                    <li>Digital Social Problems</li>
-                </ul>
+    <div class="u-full-width soc-semester">
+        <div id="semester-details" class="container">
+            <h2>The Path</h2>
+            <div class="row semester-box">
+                <div class="semester col-md-3 ">
+                    <h3>Semester 1</h3>
+                    <ul>
+                        <li>Statistics</li>
+                        <li>Theory</li>
+                        <li>Digital Social Problems</li>
+                    </ul>
+                </div>
+                <div class="semester col-md-3 ">
+                    <h3>Semester 2</h3>
+                    <ul>
+                        <li>Research Methods</li>
+                        <li>Public Sociology</li>
+                        <li>Big Data/Data Scraping</li>
+                    </ul>
+                </div>
+                <div class="semester col-md-3 ">
+                    <h3>Semester 3</h3>
+                    <ul>
+                        <li>Quantitative</li>
+                        <li>Digital Sociology</li>
+                        <li>Project 1</li>
+                    </ul>
+                </div>
+                <div class="semester col-md-3 ">
+                    <h3>Semester 4</h3>
+                    <ul>
+                        <li>Data Visualization</li>
+                        <li>SNA</li>
+                        <li>Project 2</li>
+                    </ul>
+                </div>
             </div>
-            <div class="semester three columns">
-                <h3>Semester 2</h3>
-                <ul>
-                    <li>Research Methods</li>
-                    <li>Public Sociology</li>
-                    <li>Big Data/Data Scraping</li>
-                </ul>
-            </div>
-            <div class="semester columns three">
-                <h3>Semester 3</h3>
-                <ul>
-                    <li>Quantitative</li>
-                    <li>Digital Sociology</li>
-                    <li>Project 1</li>
-                </ul>
-            </div>
-            <div class="semester columns three">
-                <h3>Semester 4</h3>
-                <ul>
-                    <li>Data Visualization</li>
-                    <li>SNA</li>
-                    <li>Project 2</li>
-                </ul>
-            </div>
-        </div>        
+        </div>
     </div>
-    </div>
-
     <div class="container soc-what">
         <h2>The Overview</h2>
         <div class="row ">
-            <div class="columns six">
-              <h3>What is a Digital Sociologist?</h3>
-              <p>According to sociologist Deborah Lupton, digital sociology has four distinguishing characteristics:</p>
-              <ol>
-                <li><strong>Professional digital practice</strong>: using digital media tools for professional purposes: to build networks, construct an e-profile, publicize and share research and instruct students. </li>
-                <li><strong>Sociological analyses of digital use</strong>: researching the ways in which people's use of digital media configures their sense of selves, their embodiment and their social relations. </li>
-                <li><strong>Digital data analysis</strong>: using digital data for social research, either quantitative or qualitative. </li>
-                <li><strong>Critical digital sociology</strong>: undertaking reflexive and critical analysis of digital media informed by social and cultural theory.</li>
-              </ol>
+            <div class="col-md-6">
+                <h3>What is a Digital Sociologist?</h3>
+                <p>According to sociologist Deborah Lupton, digital sociology has four distinguishing characteristics:</p>
+                <ol>
+                    <li><strong>Professional digital practice</strong>: using digital media tools for professional purposes: to build networks, construct an e-profile, publicize and share research and instruct students.
+                    </li>
+                    <li><strong>Sociological analyses of digital use</strong>: researching the ways in which people's use of digital media configures their sense of selves, their embodiment and their social relations.
+                    </li>
+                    <li><strong>Digital data analysis</strong>: using digital data for social research, either quantitative or qualitative.
+                    </li>
+                    <li><strong>Critical digital sociology</strong>: undertaking reflexive and critical analysis of digital media informed by social and cultural theory.</li>
+                </ol>
             </div>
-
-            <div class="soc-half columns six">
-              <h3>As a Digital Sociologist, you will:</h3>
-              <ol>
-                <li><strong>Develop a professional digital practice</strong>: using digital media tools like WordPress, soundcloud, Facebook, Twitter, Instagram, Snapchat, Hypothes.is, Slack and other platforms you will share sociological analysis with various audiences. </li>
-                <li><strong>Analyze digital use</strong>: using various methods you will apply classic and contemporary social theory to how individuals, institutions and groups use digital media. </li>
-                <li><strong>Do digital data analysis</strong>: you will develop analytical skills using data mining, textual analysis, content analysis, virtual ethnography, social network analysis, linear regression and surveys. </li>
-                <li><strong>Apply critical sociology to contemporary social problems</strong>: using theory, data, and methods you will demonstrate that you can identify and analyze stratification and articulate theories of social change.</li>
-              </ol>
-            </div>
-        </div>
-    </div>
-<div class="u-full-width soc-who">        
-    <div class="container">
-        <div class="row">
-            <div class="columns six">
-                pics
-            </div>
-            <div class="columns six">
-                <h2>Dedicated, Involved Faculty</h2><p>
-                Faculty and students share a strong interest in bringing sociology out into the public through social action, internships, community research, digital storytelling and civic engagement.</p>
-
-                <p>Our dedicated faculty works tirelessly with students & the community.</p>
+            <div class="soc-half col-md-6">
+                <h3>As a Digital Sociologist, you will:</h3>
+                <ol>
+                    <li><strong>Develop a professional digital practice</strong>: using digital media tools like WordPress, soundcloud, Facebook, Twitter, Instagram, Snapchat, Hypothes.is, Slack and other platforms you will share sociological analysis with various audiences.
+                    </li>
+                    <li><strong>Analyze digital use</strong>: using various methods you will apply classic and contemporary social theory to how individuals, institutions and groups use digital media.
+                    </li>
+                    <li><strong>Do digital data analysis</strong>: you will develop analytical skills using data mining, textual analysis, content analysis, virtual ethnography, social network analysis, linear regression and surveys.
+                    </li>
+                    <li><strong>Apply critical sociology to contemporary social problems</strong>: using theory, data, and methods you will demonstrate that you can identify and analyze stratification and articulate theories of social change.</li>
+                </ol>
             </div>
         </div>
     </div>
-</div>
+    <div id="human-details" class="u-full-width soc-who">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 faculty-container">
+                    <div class="faculty-box">
+                        <img class="faculty" src="images/jj.jpg">
+                    </div>
+                    <div class="faculty-box">
+                        <img class="faculty" src="images/tmc.jpg">
+                    </div>
+                    <div class="faculty-box">
+                        <img class="faculty" src="images/ts.jpg">
+                    </div>
+                    <div class="faculty-box">
+                        <img class="faculty" src="images/mk.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Dedicated, Involved Faculty</h2>
+                    <p>
+                        Faculty and students share a strong interest in bringing sociology out into the public through social action, internships, community research, digital storytelling and civic engagement.</p>
+                    <p>Our dedicated faculty works tirelessly with students & the community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script>
-        /*
-    var pattern = Trianglify({
-        width: window.innerWidth,
-        height: window.innerHeight,
-        x_colors: 'Blues'
-    });
-    var header = document.getElementById('header');
-    header.appendChild(pattern.canvas())*/
+    /*
+            var pattern = Trianglify({
+                width: window.innerWidth,
+                height: window.innerHeight,
+                x_colors: 'Blues'
+            });
+            var header = document.getElementById('header');
+            header.appendChild(pattern.canvas())*/
     </script>
     <script type="text/javascript" src="//branding.vcu.edu/bar/academic/latest.js" data-color-bottom="white"></script>
     <style>
